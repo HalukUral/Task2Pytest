@@ -1,9 +1,7 @@
 import time
-
 import pytest
-from selenium.webdriver.common.by import By
 
-from pages.courseOverviewPage import CourseOverviewPage
+
 from pages.coursesPage import CoursesPage
 from pages.createNewAccountPage import CreateNewAccountPage
 from pages.HomePage import HomePage
@@ -19,7 +17,6 @@ class TestTask:
         creatNewAcountPage=CreateNewAccountPage(self.driver)
         coursesPage=CoursesPage(self.driver)
         courseEnrollPage=CourseEnrollPage(self.driver)
-        courseOverviewPage=CourseOverviewPage(self.driver)
 
         homePage.singInButton()
         singInPage.clickToSingUp()
