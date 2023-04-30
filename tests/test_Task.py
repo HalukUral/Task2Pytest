@@ -24,8 +24,7 @@ class TestTask:
         homePage.singInButton()
         singInPage.clickToSingUp()
         creatNewAcountPage.creatNewAccount()
-
-        time.sleep(10)
+        time.sleep(5)
         coursesPage.chooseFreeCourse()
         courseEnrollPage.enrollCourse()
         courseEnrollPage.assertEnrolling()
